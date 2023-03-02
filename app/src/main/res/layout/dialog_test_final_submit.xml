@@ -53,7 +53,7 @@
                 android:layout_gravity="center"
                 android:gravity="center">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_SemiBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                     android:textColor="@color/green"
                     android:textSize="14sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/message"
                     style="@style/Poppins_SemiBold"
                     android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
                     android:gravity="center"
                     android:padding="8dp">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_SemiBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                     android:layout_marginEnd="10dp"
                     android:padding="8dp">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_SemiBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

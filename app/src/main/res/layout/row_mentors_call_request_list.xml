@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvName"
                         style="@style/Poppins_Medium"
                         android:layout_width="0dp"

@@ -29,7 +29,7 @@
             android:layout_marginTop="20dp"
             app:lottie_loop="true" />
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             style="@style/Poppins_Bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             style="@style/Poppins_Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             style="@style/Poppins_Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

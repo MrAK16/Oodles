@@ -71,7 +71,7 @@
                         android:layout_weight="0.5"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/txtLogin"
                             style="@style/Poppins_Medium"
                             android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                         android:layout_weight="0.5"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/txtRegister"
                             style="@style/Poppins_Medium"
                             android:layout_width="match_parent"
@@ -138,7 +138,7 @@
                         android:visibility="visible"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/txtTitle"
                             style="@style/Poppins_Medium"
                             android:layout_width="wrap_content"
@@ -149,7 +149,7 @@
                             android:textColor="@color/blue_text"
                             android:textSize="18sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/txtSubTitle"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -166,7 +166,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
                                 android:text="Email/Mobile"
                                 android:textColor="@color/light_black" />
 
-                            <com.ias.oodles.utils.CustomEditText
+                            <com.ias.gsscore.utils.CustomEditText
                                 android:id="@+id/etMobile"
                                 style="@style/Poppins_Regular"
                                 android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                                 android:textColor="@color/blue_text"
                                 android:textSize="14sp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
                                 app:passwordToggleEnabled="true"
                                 app:passwordToggleTint="@color/grey_text">
 
-                                <com.ias.oodles.utils.CustomEditText
+                                <com.ias.gsscore.utils.CustomEditText
                                     android:id="@+id/etPassword"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="match_parent"
@@ -221,7 +221,7 @@
                             </com.google.android.material.textfield.TextInputLayout>
 
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:id="@+id/tvForgotPassword"
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
@@ -256,7 +256,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -264,7 +264,7 @@
                                     android:text="Full Name"
                                     android:textColor="@color/light_black" />
 
-                                <com.ias.oodles.utils.CustomEditText
+                                <com.ias.gsscore.utils.CustomEditText
                                     android:id="@+id/etFullName"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="match_parent"
@@ -276,7 +276,7 @@
                                     android:textColor="@color/blue_text"
                                     android:textSize="14sp" />
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -284,7 +284,7 @@
                                     android:text="Email"
                                     android:textColor="@color/light_black" />
 
-                                <com.ias.oodles.utils.CustomEditText
+                                <com.ias.gsscore.utils.CustomEditText
                                     android:id="@+id/etMail"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="match_parent"
@@ -297,7 +297,7 @@
                                     android:textSize="14sp" />
                             </LinearLayout>
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -314,7 +314,7 @@
                                 app:passwordToggleEnabled="true"
                                 app:passwordToggleTint="@color/grey_text">
 
-                                <com.ias.oodles.utils.CustomEditText
+                                <com.ias.gsscore.utils.CustomEditText
                                     android:id="@+id/et_register_password"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="match_parent"
@@ -329,7 +329,7 @@
 
                             </com.google.android.material.textfield.TextInputLayout>
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -347,7 +347,7 @@
                                 app:passwordToggleEnabled="true"
                                 app:passwordToggleTint="@color/grey_text">
 
-                                <com.ias.oodles.utils.CustomEditText
+                                <com.ias.gsscore.utils.CustomEditText
                                     android:id="@+id/et_register_confirm_password"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="match_parent"
@@ -376,7 +376,7 @@
                         android:orientation="vertical"
                         android:visibility="gone">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvMobileField"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -385,7 +385,7 @@
                             android:text="Mobile Number"
                             android:textColor="@color/light_black" />
 
-                        <com.ias.oodles.utils.CustomEditText
+                        <com.ias.gsscore.utils.CustomEditText
                             android:id="@+id/etMobileRegister"
                             style="@style/Poppins_Regular"
                             android:layout_width="match_parent"
@@ -416,7 +416,7 @@
                             android:layout_weight="0.36"
                             android:background="@color/grey_text" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Light"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -444,15 +444,14 @@
                         android:background="@drawable/button_bg_gmail"
                         android:gravity="center">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
+                            android:id="@+id/tvAccountType"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:layout_gravity="center"
-                            android:drawableLeft="@drawable/ic_google"
                             android:drawablePadding="10dp"
                             android:gravity="center"
-                            android:text="Google Account"
                             android:textColor="@color/light_black"
                             android:textSize="12sp" />
 
@@ -472,7 +471,7 @@
                         android:layout_gravity="center"
                         android:src="@drawable/circle_lock" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -482,7 +481,7 @@
                         android:textColor="@color/blue_text"
                         android:textSize="18sp" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -492,7 +491,7 @@
                         android:textColor="@color/grey_text"
                         android:textSize="12sp" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/otpMobile"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -529,7 +528,7 @@
                         android:gravity="center"
                         android:orientation="horizontal">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -538,7 +537,7 @@
                             android:textColor="@color/light_black"
                             android:textSize="12sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/resend"
                             style="@style/Poppins_Medium"
                             android:layout_width="wrap_content"
@@ -556,20 +555,21 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             android:id="@+id/loginOtp"
             style="@style/Poppins_Light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/loginButton"
             android:layout_gravity="center"
+            android:visibility="gone"
             android:gravity="center_horizontal"
             android:text="Click here to Login with &quot; One time password &quot; OTP"
             android:textColor="@color/blue_text"
             android:textSize="12sp" />
 
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             android:id="@+id/loginButton"
             style="@style/Poppins_Regular"
             android:layout_width="match_parent"

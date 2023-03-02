@@ -45,7 +45,7 @@
                     android:gravity="center">
 
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Regular"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -62,7 +62,7 @@
 
 
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/tvName"
                 style="@style/Poppins_Regular"
                 android:layout_width="wrap_content"

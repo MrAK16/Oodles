@@ -43,7 +43,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvName"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
                             android:layout_marginEnd="10dp"
                             app:tint="@color/white" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

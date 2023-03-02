@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.ias.oodles.ui.viewmodel.VideoDetailsViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.VideoDetailsViewModel" />
     </data>
 
     <LinearLayout
@@ -41,7 +41,7 @@
 
             </LinearLayout>
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/headerTitle"
                 style="@style/Poppins_Medium"
                 android:layout_width="wrap_content"
@@ -184,7 +184,7 @@
                         android:padding="3dp"
                         android:visibility="gone">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvDuration"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -245,7 +245,7 @@
                                         android:gravity="center_vertical"
                                         android:orientation="vertical">
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvTitle"
                                             style="@style/Poppins_Regular"
                                             android:layout_width="wrap_content"
@@ -273,7 +273,7 @@
 
                                 </LinearLayout>
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/tvDescription"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -306,7 +306,7 @@
                                             android:layout_height="wrap_content"
                                             android:src="@drawable/ic_user" />
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvThoughtBy"
                                             style="@style/Poppins_Regular"
                                             android:layout_width="wrap_content"
@@ -330,7 +330,7 @@
                                             android:layout_height="wrap_content"
                                             android:src="@drawable/ic_calender_small" />
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/start"
                                             style="@style/Poppins_Regular"
                                             android:layout_width="wrap_content"
@@ -356,7 +356,7 @@
                                             android:src="@drawable/ic_course_brochure"
                                             app:tint="@color/blue_text" />
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvDelete"
                                             style="@style/Poppins_Regular"
                                             android:layout_width="wrap_content"
@@ -385,7 +385,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Medium"
                         android:id="@+id/tvOtherVideo"
                         android:layout_width="wrap_content"

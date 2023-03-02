@@ -38,7 +38,7 @@
                     android:paddingRight="10dp"
                     android:orientation="vertical">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvName"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
                         android:textSize="14sp" />
 
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/desc"
                         style="@style/Poppins_Light"
                         android:layout_width="match_parent"

@@ -32,7 +32,7 @@
 
             </LinearLayout>
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 style="@style/Poppins_Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 android:textColor="@color/blue_text"
                 android:textSize="16sp" />
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 style="@style/Poppins_Regular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

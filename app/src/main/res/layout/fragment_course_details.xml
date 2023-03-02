@@ -103,7 +103,7 @@
                                         android:gravity="center_vertical"
                                         android:orientation="vertical">
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvCourseTitle"
                                             style="@style/Poppins_Regular"
                                             android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
                                             android:background="@drawable/curve_blue_solid_grey_stroke"
                                             android:padding="5dp">
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                                             android:background="@drawable/curve_blue_solid_grey_stroke"
                                             android:padding="5dp">
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                                             android:gravity="center_vertical"
                                             android:orientation="vertical">
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 android:id="@+id/tvBatchStartDate"
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
                                                 android:textSize="12sp"
                                                 tools:text="Start From 19 Feb" />
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 android:id="@+id/tvBatchTime"
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
@@ -245,7 +245,7 @@
                                                 android:src="@drawable/ic_email_solid"
                                                 app:tint="@color/blue_text" />
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -272,7 +272,7 @@
                                                 android:src="@drawable/ic_call_solid"
                                                 app:tint="@color/blue_text" />
 
-                                            <com.ias.oodles.utils.CustomTextView
+                                            <com.ias.gsscore.utils.CustomTextView
                                                 style="@style/Poppins_Regular"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
@@ -320,7 +320,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content">
 
-                                                <com.ias.oodles.utils.CustomTextView
+                                                <com.ias.gsscore.utils.CustomTextView
                                                     android:id="@+id/tvMonthOnline"
                                                     style="@style/Poppins_Regular"
                                                     android:layout_width="wrap_content"
@@ -360,7 +360,7 @@
                                                     android:gravity="center"
                                                     android:orientation="vertical">
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         android:id="@+id/tvOnlineAmount"
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
@@ -369,7 +369,7 @@
                                                         android:textSize="12sp"
                                                         tools:text="₹ 130,000/-" />
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
                                                         android:layout_height="wrap_content"
@@ -377,7 +377,7 @@
                                                         android:textColor="@color/text_color_333333"
                                                         android:textSize="12sp" />
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         android:id="@+id/online_gst"
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
@@ -419,7 +419,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content">
 
-                                                <com.ias.oodles.utils.CustomTextView
+                                                <com.ias.gsscore.utils.CustomTextView
                                                     android:id="@+id/tvMonthOffline"
                                                     style="@style/Poppins_Regular"
                                                     android:layout_width="wrap_content"
@@ -459,7 +459,7 @@
                                                     android:gravity="center"
                                                     android:orientation="vertical">
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         android:id="@+id/tvOfflineAmount"
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
@@ -468,7 +468,7 @@
                                                         android:textSize="12sp"
                                                         tools:text="₹ 130,000/-" />
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
                                                         android:layout_height="wrap_content"
@@ -476,7 +476,7 @@
                                                         android:textColor="@color/text_color_333333"
                                                         android:textSize="12sp" />
 
-                                                    <com.ias.oodles.utils.CustomTextView
+                                                    <com.ias.gsscore.utils.CustomTextView
                                                         android:id="@+id/offline_gst"
                                                         style="@style/Poppins_Medium"
                                                         android:layout_width="wrap_content"
@@ -511,7 +511,7 @@
                                         android:gravity="center"
                                         android:padding="8dp">
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             style="@style/Poppins_SemiBold"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
@@ -540,7 +540,7 @@
                                             android:src="@drawable/ic_course_brochure"
                                             app:tint="@color/blue_text" />
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             style="@style/Poppins_SemiBold"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
@@ -626,7 +626,7 @@
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvBatchStartDateBottom"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -635,7 +635,7 @@
                         android:textSize="12sp"
                         android:text="Start From 19 Feb" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvBatchTimeBottom"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -657,7 +657,7 @@
                 android:gravity="center">
 
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_SemiBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

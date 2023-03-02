@@ -63,7 +63,7 @@
                             android:layout_marginHorizontal="8dp"
                             android:orientation="vertical">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:id="@+id/tvTitle"
                                 style="@style/Poppins_Medium"
                                 android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                                 android:textColor="@color/blue_text"
                                 android:textSize="16sp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                                 android:textSize="14sp" />
 
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:id="@+id/tvAmount"
                                 style="@style/Poppins_Medium"
                                 android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/tvDeliverBy"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -148,7 +148,7 @@
                         android:layout_gravity="center"
                         android:gravity="center">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvMoveToCart"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"

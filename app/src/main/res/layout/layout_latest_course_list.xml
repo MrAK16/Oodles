@@ -17,7 +17,7 @@
             android:background="@drawable/bg_dummy"
             android:orientation="vertical">
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/tvCourseTitle"
                 style="@style/Poppins_Medium"
                 android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:background="@drawable/bg_latest_course_half"
                 android:layout_marginBottom="12dp">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

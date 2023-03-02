@@ -7,7 +7,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.OrderSummaryViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.OrderSummaryViewModel" />
     </data>
 
     <RelativeLayout
@@ -37,7 +37,7 @@
 
             </LinearLayout>
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/headerTitle"
                 style="@style/Poppins_Medium"
                 android:layout_width="wrap_content"
@@ -64,25 +64,53 @@
                 android:layout_marginHorizontal="8dp"
                 android:orientation="vertical">
 
-                <com.ias.oodles.utils.CustomTextView
-                    android:id="@+id/addAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/curve_blue_stroke"
-                    android:gravity="center"
-                    android:text="Add Address"
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
-
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Select Address"
+                    android:text="Product Details"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProductDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adapter="@{viewmodel.courseAdapter}"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    tools:itemCount="1"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/layout_product_details_list"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.ias.gsscore.utils.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Select Address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+
+                    <com.ias.gsscore.utils.CustomTextView
+                        android:id="@+id/addAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/curve_blue_stroke"
+                        android:gravity="center"
+                        android:text="Add Address"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_weight="2"/>
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvAddress"
@@ -103,7 +131,7 @@
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tot_items"
                         style="@style/Poppins_Medium"
                         android:layout_width="wrap_content"
@@ -112,7 +140,7 @@
                         android:textColor="#000"
                         android:textSize="16sp" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/view_items"
                         style="@style/Poppins_Medium"
                         android:layout_width="match_parent"
@@ -141,14 +169,14 @@
                         android:orientation="horizontal">
 
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Total MRP "
                             android:textColor="@color/black"
                             android:textSize="16sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvTotalMrp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -168,7 +196,7 @@
                         android:orientation="horizontal">
 
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/gst"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -176,7 +204,7 @@
                             android:textColor="@color/black"
                             android:textSize="16sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/gst_amount"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -197,14 +225,14 @@
                         android:orientation="horizontal">
 
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Deliver Charges"
                             android:textColor="@color/black"
                             android:textSize="16sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="right"
@@ -228,14 +256,14 @@
                         android:orientation="horizontal">
 
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Total Amount "
                             android:textColor="@color/black"
                             android:textSize="16sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvTotalAmount"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -266,7 +294,7 @@
                         android:layout_weight="0.2"
                         android:src="@drawable/img_coupon" />
 
-                    <com.ias.oodles.utils.CustomEditText
+                    <com.ias.gsscore.utils.CustomEditText
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
@@ -277,7 +305,7 @@
                         android:hint="Coupon Code"
                         android:textColor="@color/black" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:layout_width="0dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
@@ -297,7 +325,7 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/orderLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -327,7 +355,7 @@
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Medium"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -335,7 +363,7 @@
                         android:textColor="@color/black"
                         android:textSize="12sp" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvFinalAmount"
                         style="@style/Poppins_Medium"
                         android:layout_width="match_parent"
@@ -348,7 +376,7 @@
                 </LinearLayout>
 
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/btn_continue"
                     style="@style/Poppins_Medium"
                     android:layout_width="0dp"
@@ -365,7 +393,7 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </RelativeLayout>
 

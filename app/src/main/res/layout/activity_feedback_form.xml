@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.FeedbackFormViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.FeedbackFormViewModel" />
     </data>
 
     <RelativeLayout
@@ -41,7 +41,7 @@
                     android:src="@drawable/ic_back_black" />
             </LinearLayout>
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/tvTitle"
                 style="@style/Poppins_Medium"
                 android:layout_width="0dp"
@@ -96,7 +96,7 @@
                     android:layout_below="@+id/layout1"
                     android:orientation="vertical">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Medium"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                         android:textSize="14sp" />
 
 
-                    <com.ias.oodles.utils.CustomEditText
+                    <com.ias.gsscore.utils.CustomEditText
                         android:id="@+id/tvMessage"
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
@@ -131,7 +131,7 @@
             android:layout_margin="10dp"
             android:layout_alignParentBottom="true">
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/btSubmit"
                 style="@style/Poppins_Regular"
                 android:layout_width="match_parent"

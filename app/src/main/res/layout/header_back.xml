@@ -8,7 +8,7 @@
 
         <variable
             name="backHeaderViewModel"
-            type="com.ias.oodles.ui.viewmodel.HeaderBackViewModel"/>
+            type="com.ias.gsscore.ui.viewmodel.HeaderBackViewModel"/>
 
     </data>
 

@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.ias.oodles.ui.viewmodel.EventsFragmentViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.EventsFragmentViewModel" />
     </data>
 
 
@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 style="@style/Poppins_Regular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/row_mentors_call_request_list" />
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 style="@style/Poppins_Regular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

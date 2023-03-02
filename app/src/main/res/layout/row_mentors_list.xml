@@ -37,7 +37,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
-                        <com.ias.oodles.utils.RoundedView
+                        <com.ias.gsscore.utils.RoundedView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:bottomLeftCornerRadius="10dp"
@@ -54,7 +54,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/dummy_image5" />
 
-                        </com.ias.oodles.utils.RoundedView>
+                        </com.ias.gsscore.utils.RoundedView>
 
                     </RelativeLayout>
 
@@ -82,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvName"
                             style="@style/Poppins_Medium"
                             android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/txtMsg"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"

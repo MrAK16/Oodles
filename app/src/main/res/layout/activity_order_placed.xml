@@ -42,7 +42,7 @@
 
                 </LinearLayout>
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Order Placed"
@@ -82,7 +82,7 @@
                             android:textColor="@color/black"
                             android:textSize="22sp"/>
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Thank You"
@@ -115,7 +115,7 @@
             android:layout_alignParentBottom="true"
             android:background="#fff">
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/btn_continue"
                 style="@style/Poppins_Medium"
                 android:layout_width="match_parent"

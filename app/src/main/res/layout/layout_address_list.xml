@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvName"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvDefaultAddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
 
                 </LinearLayout>
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                     android:textColor="@color/grey"
                     android:textSize="14sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvCity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                     android:textColor="@color/grey_text"
                     android:textSize="14sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvState"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                     android:textColor="@color/grey_text"
                     android:textSize="14sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvMobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
             android:layout_margin="8dp"
             android:orientation="horizontal">
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/btEditAddress"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -129,7 +129,7 @@
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/btRemove"
                 android:layout_width="0dp"
                 android:layout_height="50dp"

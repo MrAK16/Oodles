@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.StudyNotesDetailsViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.StudyNotesDetailsViewModel" />
     </data>
 
     <LinearLayout
@@ -72,7 +72,7 @@
                         android:orientation="horizontal"
                         android:weightSum="1">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/title"
                             style="@style/Poppins_Regular"
                             android:layout_width="0dp"
@@ -102,7 +102,7 @@
 
                     </LinearLayout>
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Light"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                             android:layout_gravity="center_vertical"
                             android:gravity="center_vertical">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Light"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                                 android:layout_gravity="center"
                                 android:orientation="horizontal">
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/price"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                                     android:textColor="#c4c4c4"
                                     android:textSize="13sp" />
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/discounted_price"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -176,7 +176,7 @@
                                     android:textSize="16sp" />
 
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/percentage"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -220,7 +220,7 @@
                                 android:layout_weight="0.4"
                                 android:gravity="center">
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     style="@style/Poppins_Medium"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -277,7 +277,7 @@
                                     android:layout_height="20dp"
                                     android:src="@drawable/ic_cart_blue" />
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
@@ -298,7 +298,7 @@
                                 android:visibility="gone"
                                 android:orientation="vertical">
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
@@ -327,7 +327,7 @@
                     android:orientation="vertical"
                     android:visibility="gone">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Regular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -349,7 +349,7 @@
                             android:layout_height="50dp"
                             android:background="@drawable/curve_blue_solid_grey_stroke">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -382,7 +382,7 @@
                             android:layout_marginRight="10dp"
                             android:orientation="vertical">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -403,7 +403,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/curve_blue_solid_grey_stroke">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -436,7 +436,7 @@
                         android:layout_marginRight="10dp"
                         android:background="@drawable/curve_blue_solid_grey_stroke">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
@@ -474,7 +474,7 @@
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -482,7 +482,7 @@
                             android:text="Similar Products"
                             android:textColor="#2B2C2D" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

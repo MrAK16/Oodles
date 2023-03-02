@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.ias.oodles.ui.viewmodel.MainsTestVideoDetailsViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.MainsTestVideoDetailsViewModel" />
     </data>
 
     <LinearLayout
@@ -46,7 +46,7 @@
                         android:src="@drawable/ic_back_black" />
                 </LinearLayout>
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvTitle"
                     style="@style/Poppins_Medium"
                     android:layout_width="0dp"

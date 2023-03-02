@@ -23,7 +23,7 @@
                     android:layout_margin="8dp"
                     android:visibility="visible">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvTitle"
                         style="@style/Poppins_SemiBold"
                         android:layout_width="0dp"
@@ -71,7 +71,7 @@
                     android:layout_margin="8dp"
                     android:visibility="visible">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_SemiBold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"

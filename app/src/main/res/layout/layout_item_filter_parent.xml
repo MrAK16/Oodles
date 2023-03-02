@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="50dp"

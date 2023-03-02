@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:background="@color/light_grey">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +13,6 @@
         android:orientation="vertical"
         android:id="@+id/mainLayout"
         android:padding="5dp">
-
 
         <LinearLayout
             android:id="@+id/item_layout"
@@ -44,7 +42,6 @@
                     android:visibility="gone"
                     android:gravity="center">
 
-
                     <TextView
                         style="@style/Poppins_Regular"
                         android:layout_width="match_parent"
@@ -55,14 +52,9 @@
                         android:text="Prelims" />
                 </LinearLayout>
 
-
-
             </RelativeLayout>
 
-
-
-
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/tvName"
                 style="@style/Poppins_Medium"
                 android:layout_width="wrap_content"

@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.StudyNotesViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.StudyNotesViewModel" />
     </data>
 
     <LinearLayout
@@ -78,7 +78,7 @@
                 android:visibility="gone">
 
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

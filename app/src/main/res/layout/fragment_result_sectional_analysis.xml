@@ -19,7 +19,7 @@
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_SemiBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                         android:gravity="center_vertical"
                         android:padding="5dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -247,7 +247,7 @@
                         android:gravity="center_vertical"
                         android:padding="5dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -356,7 +356,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -383,7 +383,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -410,7 +410,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -441,7 +441,7 @@
                         android:layout_marginEnd="5dp"
                         android:padding="5dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -533,7 +533,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -560,7 +560,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -587,7 +587,7 @@
                                 android:orientation="horizontal"
                                 android:padding="5dp" />
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -618,7 +618,7 @@
                         android:layout_marginEnd="5dp"
                         android:padding="5dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -672,7 +672,7 @@
                                         android:backgroundTint="@color/green"
                                         android:gravity="center">
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvTrueMarks"
                                             style="@style/Poppins_Medium"
                                             android:layout_width="wrap_content"
@@ -687,7 +687,7 @@
 
                                 </LinearLayout>
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     style="@style/Poppins_Medium"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -727,7 +727,7 @@
                                         android:backgroundTint="@color/red"
                                         android:gravity="center">
 
-                                        <com.ias.oodles.utils.CustomTextView
+                                        <com.ias.gsscore.utils.CustomTextView
                                             android:id="@+id/tvActualMarks"
                                             style="@style/Poppins_Medium"
                                             android:layout_width="wrap_content"
@@ -742,7 +742,7 @@
 
                                 </LinearLayout>
 
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     style="@style/Poppins_Medium"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -794,7 +794,7 @@
                                     </LinearLayout>
 
 
-                                    <com.ias.oodles.utils.CustomTextView
+                                    <com.ias.gsscore.utils.CustomTextView
                                         android:id="@+id/tvNegativeMarks"
                                         style="@style/Poppins_Regular"
                                         android:layout_width="wrap_content"
@@ -834,7 +834,7 @@
                         android:layout_marginEnd="5dp"
                         android:padding="5dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"

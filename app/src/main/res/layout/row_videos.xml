@@ -61,7 +61,7 @@
                             android:background="@drawable/curve_blue_solid"
                             android:padding="3dp">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:id="@+id/duration"
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 style="@style/Poppins_Medium"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                                 android:textSize="14sp"
                                 android:visibility="gone"
                                 android:text="Session 1 -" />
-                            <com.ias.oodles.utils.CustomTextView
+                            <com.ias.gsscore.utils.CustomTextView
                                 android:id="@+id/tvName"
                                 style="@style/Poppins_Regular"
                                 android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/thoughtBy"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"
@@ -133,7 +133,7 @@
                                     app:drawableTint="@color/text_color_1"
                                     android:drawablePadding="5dp"
                                     android:text="Manoj K. Jha" />
-                                <com.ias.oodles.utils.CustomTextView
+                                <com.ias.gsscore.utils.CustomTextView
                                     android:id="@+id/tvDate"
                                     style="@style/Poppins_Regular"
                                     android:layout_width="wrap_content"

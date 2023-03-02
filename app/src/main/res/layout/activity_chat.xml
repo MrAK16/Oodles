@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.ChatViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.ChatViewModel" />
     </data>
 
     <RelativeLayout

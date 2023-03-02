@@ -42,7 +42,7 @@
                         android:layout_marginStart="5dp"
                         android:orientation="vertical">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvName"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
                         android:background="@drawable/ic_bg_blue"
                         android:gravity="center">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvTakeTest"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -101,7 +101,7 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_information" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/totalQuestions"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_small_clock" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/maxDuration"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -145,7 +145,7 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_small_right" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/maxMarks"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"

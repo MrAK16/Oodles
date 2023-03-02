@@ -4,15 +4,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
-
+        android:background="@color/white"
+        android:orientation="vertical">
+<!--
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical">-->
 
                 <LinearLayout
                     android:id="@+id/mainLayout"
@@ -22,9 +23,9 @@
                     android:orientation="vertical"
                     android:visibility="visible">
 
-                    <WebView
+                    <TextView
                         android:id="@+id/tvTitle"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"/>
 
@@ -41,7 +42,7 @@
                     android:layout_gravity="center"
                     android:visibility="gone">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Regular"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -55,11 +56,13 @@
                         android:textStyle="bold"/>
 
                 </LinearLayout>
+<!--
 
             </LinearLayout>
 
 
         </androidx.core.widget.NestedScrollView>
+-->
 
 
     </LinearLayout>

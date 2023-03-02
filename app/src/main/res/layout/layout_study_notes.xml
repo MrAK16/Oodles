@@ -45,7 +45,7 @@
                         android:layout_marginTop="10dp"
                         android:src="@drawable/book1" />
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/name"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
 
 
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/desc"
                         style="@style/Poppins_Light"
                         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/price"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                             android:textColor="#80000000"
                             android:textSize="13sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/discounted_price"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                             android:textSize="16sp" />
 
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/percentage"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"

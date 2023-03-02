@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <com.ias.oodles.utils.CustomTextView
+        <com.ias.gsscore.utils.CustomTextView
             android:id="@+id/tvQuestionNo"
             style="@style/Poppins_Regular"
             android:layout_width="match_parent"

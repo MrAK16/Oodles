@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.TakeTestViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.TakeTestViewModel" />
     </data>
 
     <RelativeLayout
@@ -29,7 +29,7 @@
                 android:layout_height="?actionBarSize"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:id="@+id/tvTitle"
                     android:layout_width="0dp"
@@ -55,7 +55,7 @@
                     android:onClick="@{()->viewmodel.clickExitTest()}"
                     android:padding="8dp">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_SemiBold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:background="@color/white"
                 android:orientation="vertical">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     android:id="@+id/tvQuestionTitle"
                     style="@style/Poppins_SemiBold"
                     android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvTotalQuestion"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvProgress"
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                             android:src="@drawable/ic_small_clock"
                             app:tint="@color/green" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Regular"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                             android:text="Time Left: "
                             android:textColor="@color/black"
                             android:textSize="14sp" />
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvTimeLeft"
                             style="@style/Poppins_Regular"
                             android:layout_width="0dp"
@@ -205,7 +205,7 @@
                     android:onClick="@{()->viewmodel.swipeToOpenQuestion()}"
                     android:background="@drawable/rectangle_top_corner_curve_green">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
                         android:onClick="@{()->viewmodel.clickMarkForReview()}"
                         android:padding="8dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_SemiBold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -254,7 +254,7 @@
                         android:layout_marginStart="5dp"
                         android:padding="8dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_SemiBold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -277,7 +277,7 @@
                         android:onClick="@{()->viewmodel.clickSubmitTest()}"
                         android:padding="8dp">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_SemiBold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

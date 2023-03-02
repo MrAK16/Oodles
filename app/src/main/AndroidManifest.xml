@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ias.oodles">
+    package="com.ias.gsscore">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,7 +19,7 @@
     
 
     <application
-        android:name=".utils.SingletonClass"
+        android:name="com.ias.gsscore.utils.SingletonClass"
         android:allowBackup="false"
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
@@ -28,70 +28,70 @@
         tools:replace="android:theme"
         android:theme="@style/Theme.Oodles">
         <activity
-            android:name=".ui.activity.MainTestVideoDetailActivity"
+            android:name="com.ias.gsscore.ui.activity.MainTestVideoDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.WebViewActivity"
+            android:name="com.ias.gsscore.ui.activity.WebViewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.FeedbackFormActivity"
+            android:name="com.ias.gsscore.ui.activity.FeedbackFormActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name="com.ias.gsscore.ui.activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.TestResultActivity"
+            android:name="com.ias.gsscore.ui.activity.TestResultActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.TakeTestActivity"
+            android:name="com.ias.gsscore.ui.activity.TakeTestActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.MentorBoxActivity"
+            android:name="com.ias.gsscore.ui.activity.MentorBoxActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.ChatActivity"
+            android:name="com.ias.gsscore.ui.activity.ChatActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.ContainerActivity"
+            android:name="com.ias.gsscore.ui.activity.ContainerActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.PersonalProfileActivity"
+            android:name="com.ias.gsscore.ui.activity.PersonalProfileActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.ProfileSettingActivity"
+            android:name="com.ias.gsscore.ui.activity.ProfileSettingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.MaterialReportDetailsActivity"
+            android:name="com.ias.gsscore.ui.activity.MaterialReportDetailsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.MaterialBlogsDetailsActivity"
+            android:name="com.ias.gsscore.ui.activity.MaterialBlogsDetailsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.LoginActivity"
+            android:name="com.ias.gsscore.ui.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".ui.activity.ChangePasswordActivity"
+            android:name="com.ias.gsscore.ui.activity.ChangePasswordActivity"
             android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.ias.gsscore.ui.activity.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -102,42 +102,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.CourseFilterActivity"
+            android:name="com.ias.gsscore.ui.activity.CourseFilterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.CartItemListActivity"
+            android:name="com.ias.gsscore.ui.activity.CartItemListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.OrderSummaryActivity"
+            android:name="com.ias.gsscore.ui.activity.OrderSummaryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.ConfirmOrderActivity"
+            android:name="com.ias.gsscore.ui.activity.ConfirmOrderActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.AddAddressActivity"
+            android:name="com.ias.gsscore.ui.activity.AddAddressActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.OrderPlacedActivity"
+            android:name="com.ias.gsscore.ui.activity.OrderPlacedActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.OrderListActivity"
+            android:name="com.ias.gsscore.ui.activity.OrderListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.OrderDetailsActivity"
+            android:name="com.ias.gsscore.ui.activity.OrderDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.MainTestRankDetailsActivity"
+            android:name="com.ias.gsscore.ui.activity.MainTestRankDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.activity.NotificationActivity"
+            android:name="com.ias.gsscore.ui.activity.NotificationActivity"
             android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/AppTheme.NoActionBar">
@@ -147,21 +147,21 @@
         </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.VideoWebViewActivity"
+            android:name="com.ias.gsscore.ui.activity.VideoWebViewActivity"
            android:screenOrientation="landscape"
              />
         <activity
-            android:name=".ui.activity.VideoDetailsActivity"
+            android:name="com.ias.gsscore.ui.activity.VideoDetailsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".ui.activity.StrategyVideoDetails"
+            android:name="com.ias.gsscore.ui.activity.StrategyVideoDetails"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"  />
 
         <activity
-            android:name=".ui.activity.YouTubeVideoActivity"
+            android:name="com.ias.gsscore.ui.activity.YouTubeVideoActivity"
             android:theme="@style/AppTheme.NoActionBar"  />
 
         <activity android:name="com.payu.custombrowser.PreLollipopPaymentsActivity"
@@ -185,7 +185,7 @@
         </activity>
 
         <service
-            android:name=".fcm.MyFirebaseMessagingService"
+            android:name="com.ias.gsscore.fcm.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.ias.oodles.ui.viewmodel.TestQuestionFragmentViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.TestQuestionFragmentViewModel" />
     </data>
 
     <LinearLayout
@@ -56,7 +56,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvName"
                             style="@style/Poppins_Medium"
                             android:layout_width="0dp"
@@ -66,7 +66,7 @@
                             android:textColor="@color/text_color_333333"
                             android:textSize="14sp" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/tvClear"
                             style="@style/Poppins_Medium"
                             android:layout_width="wrap_content"

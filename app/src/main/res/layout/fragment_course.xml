@@ -9,7 +9,7 @@
 
         <variable
             name="viewmodel"
-            type="com.ias.oodles.ui.viewmodel.CourseFragmentViewModel" />
+            type="com.ias.gsscore.ui.viewmodel.CourseFragmentViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -30,7 +30,7 @@
                 android:visibility="visible"
                 android:orientation="horizontal">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                     android:textColor="#000"
                     android:textSize="16sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Medium"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
-                <com.ias.oodles.utils.CustomTextView
+                <com.ias.gsscore.utils.CustomTextView
                     style="@style/Poppins_Regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                 tools:itemCount="2"
                 tools:listitem="@layout/layout_course_list" />
 
-            <com.ias.oodles.utils.CustomTextView
+            <com.ias.gsscore.utils.CustomTextView
                 android:id="@+id/tvNoData"
                 style="@style/Poppins_Medium"
                 android:layout_width="match_parent"

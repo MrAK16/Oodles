@@ -54,7 +54,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <com.ias.oodles.utils.CustomTextView
+                    <com.ias.gsscore.utils.CustomTextView
                         android:id="@+id/tvName"
                         style="@style/Poppins_Regular"
                         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
                             android:tint="@color/blue_text"
                             android:src="@drawable/ic_calender_small" />
 
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             style="@style/Poppins_Light"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                             android:text="Scheduled for "
                             android:textColor="@color/blue_text"
                             android:textSize="12sp" />
-                        <com.ias.oodles.utils.CustomTextView
+                        <com.ias.gsscore.utils.CustomTextView
                             android:id="@+id/desc"
                             style="@style/Poppins_Light"
                             android:layout_width="wrap_content"
