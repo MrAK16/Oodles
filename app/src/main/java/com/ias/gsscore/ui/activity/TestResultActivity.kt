@@ -2,12 +2,14 @@ package com.ias.gsscore.ui.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.gson.Gson
 import com.ias.gsscore.databinding.ActivityTestResultBinding
 import com.ias.gsscore.network.ApiInterface
 import com.ias.gsscore.network.RetrofitHelper
@@ -174,6 +176,7 @@ class TestResultActivity : AppCompatActivity(), TestResultTopListAdapter.ClickLi
             loadingDialog.show()
             val result = apiService.prelimsTestReport(request)
             val response: TestResultResponse = result.body()!!
+            Log.d("Test Report ====", Gson().toJson(response))
             if (response.status) {
                 reportData = response.report!!
                 questionList = reportData.questions

@@ -1,8 +1,12 @@
 package com.ias.gsscore.ui.activity
 
 import android.content.Intent
+import android.database.Cursor
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.OpenableColumns
+import android.util.Log
 import android.view.View
 import androidx.core.os.bundleOf
 import androidx.core.view.GravityCompat
@@ -16,7 +20,7 @@ import com.ias.gsscore.utils.Preferences
 import com.ias.gsscore.utils.SingletonClass
 import com.ias.gsscore.viewmodelfactory.ActivityViewModelFactory
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), Listener {
     lateinit var binding: ActivityMainBinding
     companion object {
         lateinit var viewModel: MainViewModel
@@ -185,8 +189,45 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun selectPDF() {
+        selectPdf()
+    }
 
+    private fun selectPdf() {
+        val pdfIntent = Intent(Intent.ACTION_GET_CONTENT)
+        pdfIntent.type = "application/pdf"
+        pdfIntent.addCategory(Intent.CATEGORY_OPENABLE)
+        startActivityForResult(pdfIntent, 12)
+    }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        // For loading PDF
+        when (requestCode) {
+            12 -> if (resultCode == RESULT_OK) {
+
+                //         pdfUri = data?.data!!
+                val uri: Uri = data?.data!!
+                val uriString: String = uri.toString()
+                var pdfName: String? = null
+                if (uriString.startsWith("content://")) {
+                    var myCursor: Cursor? = null
+                    try {
+                        myCursor =
+                            applicationContext!!.contentResolver.query(uri, null, null, null, null)
+                        if (myCursor != null && myCursor.moveToFirst()) {
+                            pdfName =
+                                myCursor.getString(myCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME))
+                            Log.d("***** ContainerActivity >>>", "" + pdfName)
+                            //         pdfTextView.text = pdfName
+                        }
+                    } finally {
+                        myCursor?.close()
+                    }
+                }
+            }
+        }
+    }
 
     override fun onBackPressed() {
         MainViewModel.setHeaderTitle(0, "")

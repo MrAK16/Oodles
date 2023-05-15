@@ -5,6 +5,7 @@ import android.content.Context
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.os.Build
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,16 +25,16 @@ class ResultOptionListAdapter(
 ) : RecyclerView.Adapter<ResultOptionListAdapter.ViewHolder>() {
     private val otherStrings = arrayOf("A.", "B.", "C.", "D.", "E.", "F.")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.row_options_list, parent, false)
-        return ViewHolder(view)
+        val binding = RowOptionsListBinding.inflate(LayoutInflater.from(context), parent, false)
+        return ViewHolder(binding)
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
     @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemBinding!!.apply {
-            Helpers.setWebViewText(tvName,optionList[position])
+//            Helpers.setWebViewText(tvName,optionList[position])
+            tvName.text = Html.fromHtml(optionList[position], Html.FROM_HTML_MODE_LEGACY)
             tvOption.text = otherStrings[position]
             ivRight.visibility=View.GONE
             if (questionData.markedOption!!.toInt()==0){
@@ -67,7 +68,6 @@ class ResultOptionListAdapter(
         return optionList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var itemBinding: RowOptionsListBinding? = DataBindingUtil.bind(itemView.rootView)
-    }
+    class ViewHolder(var itemBinding: RowOptionsListBinding) :
+        RecyclerView.ViewHolder(itemBinding.root)
 }

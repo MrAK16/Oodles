@@ -68,7 +68,7 @@ class MyAccountTopListFragment : Fragment(), MaterialTopListAdapter.ClickListene
         binding.rvMaterialTop.adapter = materialTopListAdapter
 
         addFragment(CourseTestFragment(requireContext(), materialTopList[courseType].nameame, false,
-            packageData!!.id!! /*"1099"*/), requireActivity())
+            packageData!!.id!! /*"1099"*/, null), requireActivity())
     }
 
     private fun getTopList(): java.util.ArrayList<PackageHasResponse> {
@@ -124,7 +124,7 @@ class MyAccountTopListFragment : Fragment(), MaterialTopListAdapter.ClickListene
         if (materialTopList[position].nameame == "Mentor Box") {
             startActivity(Intent(requireContext(), MentorBoxActivity::class.java))
         } else {
-            addFragment(CourseTestFragment(requireContext(), materialTopList[position].nameame, false,/*"1099"*/ packageData!!.id!!), requireActivity())
+            addFragment(CourseTestFragment(requireContext(), materialTopList[position].nameame, false,/*"1099"*/ packageData!!.id!!, null), requireActivity())
         }
         /*  when (materialTopList[position].nameame) {
               "PT Test" -> addFragment(CourseTestFragment(this,materialTopList[position].nameame), this)

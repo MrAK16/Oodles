@@ -42,13 +42,13 @@ class VideoDetailsPagerAdapter(
             else -> {
                 when (i) {
                     0 -> {
-                        CourseTestFragment(context, "Other", true, "")
+                        CourseTestFragment(context, "Other", true, "", null)
                     }
                     1 -> {
-                        CourseTestFragment(context, "Other"/*"pt-test"*/, true, "")
+                        CourseTestFragment(context, "Other"/*"pt-test"*/, true, "", null)
                     }
                     else -> {
-                        CourseTestFragment(context, "Other"/*"e-books"*/, true, "")
+                        CourseTestFragment(context, "Other"/*"e-books"*/, true, "", null)
                     }
                 }
             }

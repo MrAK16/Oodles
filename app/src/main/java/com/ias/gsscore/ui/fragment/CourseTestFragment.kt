@@ -1,8 +1,10 @@
 package com.ias.gsscore.ui.fragment
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -25,8 +27,13 @@ import com.ias.gsscore.utils.Preferences
 import com.ias.gsscore.network.RetrofitHelper
 import com.ias.gsscore.network.response.cart.CartItemResponse
 import com.ias.gsscore.network.response.courses.BatchesList
+import com.ias.gsscore.network.response.myaccount.MainsTest
 import com.ias.gsscore.network.response.myaccount.ProgramList
+import com.ias.gsscore.ui.activity.ContainerActivity
+import com.ias.gsscore.ui.activity.Listener
+import com.ias.gsscore.ui.activity.MainActivity
 import com.ias.gsscore.ui.activity.OrderSummaryActivity
+import com.ias.gsscore.ui.adapter.MainTestListAdapter.UploadAnswerInterface
 import com.ias.gsscore.ui.bottomsheet.CourseTypeBottomSheet
 import com.ias.gsscore.utils.Helpers
 import com.ias.gsscore.utils.InterfaceClickListener
@@ -35,8 +42,19 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class CourseTestFragment(context: Context, val type: String, private val boolWhereFrom: Boolean, private var packageId: String) : Fragment(), InterfaceClickListener, DownloadBrochureInterface, ViewAllBatchesListAdapter.EnrollClick,
-    CourseTypeBottomSheet.BottomSheetCourseTypeClick,ViewAllBatchesListAdapter.BrochureClick {
+class CourseTestFragment(
+                    context: Context,
+                    val type: String,
+                    private val boolWhereFrom: Boolean,
+                    private var packageId: String,
+                    private var listener: Listener?
+) : Fragment(),
+    InterfaceClickListener,
+    DownloadBrochureInterface,
+    ViewAllBatchesListAdapter.EnrollClick,
+    CourseTypeBottomSheet.BottomSheetCourseTypeClick,
+    ViewAllBatchesListAdapter.BrochureClick {
+
     lateinit var loadingDialog: AlertDialog
     private val coroutineScope = CoroutineScope(Dispatchers.Main)
     private val apiService = RetrofitHelper.getInstance().create(ApiInterface::class.java)
@@ -60,6 +78,18 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
     private lateinit var enrollContext: ViewAllBatchesListAdapter.EnrollClick
     private lateinit var brochureClickContext: ViewAllBatchesListAdapter.BrochureClick
     private lateinit var interfaceCourseTypeContex: CourseTypeBottomSheet.BottomSheetCourseTypeClick
+    private lateinit var uploadAnswerInterface: UploadAnswerInterface
+
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        listener = context as Listener
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        listener = null
+    }
 
     override
     fun onCreateView(
@@ -70,9 +100,9 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_course_test, container, false)
         loadingDialog = RetrofitHelper.loadingDialog(requireContext())
         downloadBrochureInterface = this
-        enrollContext=this
+        enrollContext = this
         interfaceCourseTypeContex = this
-        brochureClickContext=this
+        brochureClickContext = this
         workManager = WorkManager.getInstance(requireActivity())
         initialData()
         return binding.root;
@@ -91,6 +121,12 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
         linearLayoutManager = LinearLayoutManager(context)
         binding.rvMaterial.layoutManager = linearLayoutManager
 //        apiCallTypeWise()
+
+        uploadAnswerInterface = object : UploadAnswerInterface {
+            override fun uploadAnswer(data: MainsTest) {
+                (listener as MainActivity).selectPDF()
+            }
+        }
     }
 
     override fun onResume() {
@@ -114,7 +150,14 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
     private fun setViewAllBatchesAdapter() {
 
 
-        viewAllBatchesListAdapter = context?.let { ViewAllBatchesListAdapter(it, CourseDetailsFragment.courseResponse.courseInfo!!.batchesList,enrollContext,brochureClickContext) }
+        viewAllBatchesListAdapter = context?.let {
+            ViewAllBatchesListAdapter(
+                it,
+                CourseDetailsFragment.courseResponse.courseInfo!!.batchesList,
+                enrollContext,
+                brochureClickContext
+            )
+        }
         binding.rvMaterial.adapter = viewAllBatchesListAdapter
 
     }
@@ -175,12 +218,14 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
                     response.programList
                 )
                 if (bool) {
+                    Log.d("***** CourseTestFragment >>>", "" + response.mainsTest)
                     mainTestListAdapter =
                         context?.let {
                             MainTestListAdapter(
                                 it,
                                 response.mainsTest,
-                                downloadBrochureInterface
+                                downloadBrochureInterface,
+                                uploadAnswerInterface
                             )
                         }
                     binding.rvMaterial.adapter = mainTestListAdapter
@@ -278,7 +323,7 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
 
                     .show()
                 val intent = Intent(context, OrderSummaryActivity::class.java)
-                if (position == 1){
+                if (position == 1) {
                     intent.putExtra(
                         "amount",
                         "" + (batchesData.onlineAmount)
@@ -399,15 +444,21 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
             CHANNEL_DESC = title
             val requestID = System.currentTimeMillis().toInt()
             NOTIFICATION_ID = requestID
-            Helpers.startDownloadingFile(requireActivity(),url, fileName, "PDF", workManager, requireActivity())
+            Helpers.startDownloadingFile(
+                requireActivity(),
+                url,
+                fileName,
+                "PDF",
+                workManager,
+                requireActivity()
+            )
         } else
             Toast.makeText(requireActivity(), "URL not found!", Toast.LENGTH_SHORT).show()
     }
 
 
-
     override fun onEnrollClick(position: Int) {
-        Toast.makeText(context,position.toString(),Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, position.toString(), Toast.LENGTH_SHORT).show()
         bottomSheetCourseType =
             CourseTypeBottomSheet(
                 CourseDetailsFragment.courseResponse.courseInfo!!.batchesList[position],
@@ -415,14 +466,14 @@ class CourseTestFragment(context: Context, val type: String, private val boolWhe
             ).apply {
                 show(SingletonClass.instance.containerFragmentManager!!, CourseTypeBottomSheet.TAG)
             }
-       /* bottomSheetCourseType =
-            CourseTypeBottomSheet(
+        /* bottomSheetCourseType =
+             CourseTypeBottomSheet(
 
-                CourseDetailsFragment.courseResponse.courseInfo!!.batchesList[position],
-                interfaceCourseTypeContex
-            ).apply {
-                show(SingletonClass.instance.supportFragmentManager!!, CourseTypeBottomSheet.TAG)
-            }*/
+                 CourseDetailsFragment.courseResponse.courseInfo!!.batchesList[position],
+                 interfaceCourseTypeContex
+             ).apply {
+                 show(SingletonClass.instance.supportFragmentManager!!, CourseTypeBottomSheet.TAG)
+             }*/
     }
 
     override fun onClickCourseType(position: Int, batchesData: BatchesList) {

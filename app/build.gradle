@@ -12,7 +12,7 @@ android {
         applicationId "com.ias.gsscore"
         minSdk 21
         targetSdk 32
-        versionCode 8
+        versionCode 9
         versionName "1.8"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -39,6 +39,7 @@ android {
     dataBinding {
         enabled = true
     }
+    namespace 'com.ias.gsscore'
     buildFeatures {
         viewBinding true
     }

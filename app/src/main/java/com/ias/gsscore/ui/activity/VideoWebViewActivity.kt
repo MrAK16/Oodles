@@ -2,6 +2,7 @@ package com.ias.gsscore.ui.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.webkit.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -40,6 +41,7 @@ class VideoWebViewActivity : AppCompatActivity() {
 
         } catch (e: Exception) {
         }
+        Log.d("****** VideoWebViewActivity >>", ""+url)
         binding.webView.loadUrl(url!!)
 
     }

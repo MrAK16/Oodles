@@ -18,7 +18,8 @@ import com.ias.gsscore.ui.activity.MainTestRankDetailsActivity
 class MainTestListAdapter(
     val context: Context,
     val list: ArrayList<MainsTest>,
-    private val downloadBrochureInterface:DownloadBrochureInterface
+    private val downloadBrochureInterface:DownloadBrochureInterface,
+    private val uploadAnswerInterface : UploadAnswerInterface
 ) :
     RecyclerView.Adapter<MainTestListAdapter.ViewHolder>() {
 
@@ -41,6 +42,11 @@ class MainTestListAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.apply {
             tvName.text = list[position].title
+            if (list[position].discussionVideo == null){
+                iconPdf.visibility = View.GONE
+            } else {
+                iconPdf.visibility = View.VISIBLE
+            }
             iconPdf.background =
                 ContextCompat.getDrawable(context, R.drawable.ic_rectangle_green)
             ivPdfVideo.visibility = View.VISIBLE
@@ -79,12 +85,13 @@ class MainTestListAdapter(
                 context.startActivity(intent)
             }
             uploadAnswer.setOnClickListener {
-                Toast.makeText(
-                    context,
-                    "Coming soon",
-                    Toast.LENGTH_SHORT
-                )
-                    .show()
+                uploadAnswerInterface.uploadAnswer(list[position])
+//                Toast.makeText(
+//                    context,
+//                    "Coming soon",
+//                    Toast.LENGTH_SHORT
+//                )
+//                    .show()
             }
         }
     }
